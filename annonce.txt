@@ -1,0 +1,14 @@
+<div class='sousAnnonce'><h1>Nouvelle fonctionnalit&eacute; disponible : Vous pouvez chatter entre membres d&eacute;s &agrave; pr&eacute;sent !&nbsp;<img alt="heart" src="http://127.0.0.1/sites/b65_projetsynthese/ckeditor/plugins/smiley/images/heart.png" style="height:23px; width:23px" title="heart" /></h1>
+
+<p><img alt="" src="http://i.imgur.com/RRUe0Mo.png" style="height:169px; width:300px" /></p>
+</div><div class='sousAnnonce'><p>Bonjour &agrave; tous! Vous pouvez maintenant laissez vos commentaires &agrave; propos d&rsquo;une vid&eacute;o!&nbsp;<img alt="smiley" src="http://10.175.36.151/sites/b65_projetsynthese/ckeditor/plugins/smiley/images/regular_smile.png" style="height:23px; width:23px" title="smiley" /></p>
+</div><div class='sousAnnonce'><div class="videodetector"><iframe frameborder="0" src="https://www.youtube.com/embed/1BqE4mfh5P8?autohide=1&amp;controls=1&amp;showinfo=0"></iframe></div>
+
+<p>yeah</p>
+</div><div class='sousAnnonce'><p>huiewrgeuropjwbqeijwdfbfdj</p>
+</div><div class='sousAnnonce'><h1 style="font-style: italic; text-align: center;">Nouvelle modification du site :</h1>
+
+<h1 style="font-style: italic; text-align: center;">Couleurs chang&eacute;s !&nbsp;<img alt="smiley" src="http://127.0.0.1/sites/b65_projetsynthese/ckeditor/plugins/smiley/images/regular_smile.png" style="height:23px; width:23px" title="smiley" /></h1>
+</div><div class='sousAnnonce'><p>test pour&nbsp;</p>
+</div><div class='sousAnnonce'><p>une</p>
+</div>

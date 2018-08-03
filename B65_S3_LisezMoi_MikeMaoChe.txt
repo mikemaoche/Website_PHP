@@ -1,0 +1,66 @@
+Les procédures d'installation du projet
+
+1 - Installation du serveur WAMP
+Wamp est un serveur qui marche sous Windows pour gérer votre
+propre site. Elle a aussi une base de données intégré (MYSQL).
+
+1.a) Aller sur le site http://www.wampserver.com
+1.b) Dans la section "Téléchargements ", prenez la version de wamp qui vous convient
+1.c) Une fois téléchargé, suivez l'installation
+1.d) Si vous obtenez une erreur après l'installation, télécharger les prérequis
+(normalement , ce sont des erreurs qui demandent d'installer visual studio 2010 ~ 2016)
+-> Voilà vous avez installé WAMP server 
+
+2 - Configurer WAMP serveur
+Avant de démarrer, vous devez respecter la condition suivante :
+- Vérifier que le port 80 n'est pas utilisé pour tout type d'applications 
+(par exemple : Skype)
+
+Avant d'entamer votre travail, vous devez configurer les paramètres qui suivent :
+
+2.a) Aller dans C:\wamp\www\index.php
+2.b) Modifier la ligne qui contient : " $suppress_localhost = true; " mettez là à " false "
+2.c) Créer votre espace de travail. Pour ce faire, créez un répertoire : "TEST" qui contiendra
+tous les travaux de WEB.
+2.d) Mettez le projet dedans, c'est-à-dire votre dossier contenant votre site. Il doit y avoir
+un fichier contenant "index.php" dans votre projet, car le serveur recherche par défaut ce fichier.
+Si c'est déjà présent, ne pas réajouter un index.php.
+
+3 - Démarrage de WAMP serveur
+Pour démarrer le serveur, cliquez sur l'icone d'application WAMP sur le bureau.
+Si vous ne la voyez pas l'icone, cherchez dans la barre de recherche. Écrivez : " wamp ".
+
+3.a) Une fois que c'est fait, il y a un icone qui apparait. Fait un clic gauche sur l'icone et faites : 
+«  Démarrer les services »
+
+-> Voilà vous avez démarrez votre application
+
+4 - Aller voir son site 
+Maintenant que l'on a tout fait les étapes, on peut se rendre à notre site WEB
+
+4.a) Pour ce faire, démarrez un fureteur (Google Chrome, Firefox, Opera, etc)
+4.b) Écrivez dans la barre d'adresse : "127.0.0.1" ou "localhost"
+4.c) Vous voyez à présent la page officiel du serveur et sous cette page, il y a 
+votre répertoire : "TEST" que l'on avait créé précédement 
+4.d) cliquez sur votre projet que vous avez placer dans ce répertoire
+
+-> Et voilà , enfin, vous arrivez à accéder à votre propre site WEB !
+
+5 - GUIDE : visite de mon site  " MyAnimTV "
+À partir de la page d'accueil, un menu est présent pour vous éclairer :
+- Accueil : retourner à la page d'accueil
+- Demander une vidéo : mettez votre demande, mais vous devez être connecté
+- Visionner : regroupement de plusieurs video incluant une barre de recherche
+	* cliquez sur appréciation si vous êtes connectez, vous êtes rediriger 
+	à une page détaillé de la vidéo (vous pouvez voir les commentaires)
+	sinon si ce n'est pas le cas,  vous êtes rediriger vers la page de login
+	(Connectez vous)
+- Connectez vous : tapez votre login et votre mot de passe pour vous connecter
+- Inscription : vous pouvez créer un compte pour obtenir un profil d'utilisateur
+- Contact : regroupe les informations du site  
+
+Pour plus d'informations, faites référence au manuel d'instructions.
+
+6 - PAGE DE PRÉSENTATION
+url : http://127.0.0.1/sites/b65_projetsynthese/presentation.html
+

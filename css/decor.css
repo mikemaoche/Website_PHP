@@ -1,0 +1,1213 @@
+﻿/** VERSION MOBILE **/
+
+/**** ELEMENTS GLOBAL ****/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	min-height:100%;
+}
+
+
+body{
+	/*background:rgba(221, 227, 244, 1);*/
+	background-image:url("../images/bgBody.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header{
+	/*outline: 1px solid red;*/
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	padding:1%;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color:rgba(236, 240, 241,1.0);
+	font-size: 12px;
+}
+
+header h1{
+	outline: 3px rgba(230, 230, 230,1.0) solid;
+	width:40%;
+	display: block;
+	margin:auto;
+	font-size: 12px;
+	color:rgba(255,255,255,1.0);
+	padding:1%;
+	background:rgba(255,255,255,.5);
+	background-image: url("../images/bgHead.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:65%;
+	/*background: linear-gradient(rgba(52, 73, 94,0.8),rgba(44, 62, 80,1.0));*/
+}
+
+/**************** CADRE POUR LES VIDÉOS ************************/
+.cadreVideo{
+	width:80%;
+	margin:2% auto;
+	background: linear-gradient(rgba(23, 20, 61, 1),rgba(82, 43, 130, .8));
+	color:white;
+	height: 100%;
+	padding: 1%;
+}
+
+.cadreIFrames{
+	width: 96%;
+	margin:1% auto;
+}
+
+.unFrame{
+	background:rgba(31, 25, 77, 0.6);
+	outline: 2px solid rgba(181, 75, 195, 1);
+	width: 31%;
+	margin: 1%;
+	display: inline-block;
+}
+
+.unFrame:hover{
+	background:linear-gradient(rgba(62, 36, 107, 0.5),rgba(31, 25, 77, 0.6));
+}
+.unFrame h3, .unFrame p{
+	display: block;
+	margin: 2%;
+}
+
+.unFrame a{
+	color:black;
+}
+
+.unFrame p:nth-of-type(2){
+	/*outline: 1px solid red;*/
+	background: rgba(193, 68, 159, 1);
+	text-align:center;
+	width: 30%;
+}
+.unFrame iframe{
+	width:90%;
+	height:300px;
+	outline: rgba(171, 227, 219, 1) solid 4px;
+	margin:3% auto;
+	display: block;
+
+}
+.unFrame iframe:hover{
+	outline: 4px solid rgba(176, 226, 167, 1);
+}
+
+.unFrame input{
+	width: 80%;
+	height: 30px;
+	display: block;
+	margin:2% auto;
+}
+/**************** VIDEO EVALUER ***************************************/
+.unFrameEvaluer{
+	background:rgba(31, 25, 77, 0.6);
+	outline: 2px solid rgba(181, 75, 195, 1);
+	width: 90%;
+	margin: 1% auto;
+	height: 100%;
+}
+
+.unFrameEvaluer h1{
+	padding-top: 1%;
+	text-align: center;
+}
+.unFrameEvaluer p{
+	margin:1%;
+	font-size: 16px;
+	text-align: right;
+	width: 88%;
+}
+
+.unFrameEvaluer iframe{
+	width:80%;
+	height:600px;
+	outline: rgba(171, 227, 219, 1) solid 4px;
+	margin:3% auto;
+	display: block;
+}
+.commentaire{
+	width:80%;
+	background: linear-gradient(rgba(28, 13, 38, 1),rgba(255,255,255,1));
+	outline: 2px solid rgba(255,255,255,.5);
+	margin:1% auto;
+	padding: 1%;
+}
+
+.commentaire form {
+	width: 54%;
+	display: inline-block;
+	background: rgba(80, 27, 61, 1);
+	padding:0.5%;
+	vertical-align: top;
+}
+
+.sousCommentaire{
+	display: block;
+	width: 100%;
+	margin-top: 2.5%;
+}
+.sousCommentaire input{
+	font-size: 16px;
+}
+.sousCommentaire input:nth-of-type(1),.sousCommentaire span{
+	margin: 1%;
+}
+.sousCommentaire input:nth-of-type(2){
+	padding: 1%;
+	width: 100%;
+}
+
+.messages{
+	background:rgba(80, 27, 61, 1);
+	outline: 4px solid rgba(155, 89, 182,1.0);
+	display: inline-block;
+	width:40%;
+	margin:2%;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.messages h3{
+	text-align: center;
+	background: rgba(235, 209, 194, 1);
+	padding: 1% 0%;
+}
+
+.messages b{
+	display: block;
+	padding: 1%;
+	margin:2%;
+}
+
+.messages p, .message strong, .message i{
+	display: block;
+	margin:1% auto;
+	font-size: 18px;
+	padding:1%;
+	outline: 1px solid pink;
+	background: rgba(169, 83, 198, 1);
+	text-align: left;
+	word-wrap: break-word;
+}
+/**************** ENTETE ***************************************/
+.entete{
+		background-color:rgba(198, 204, 236, 1);
+}
+
+/**************** DIV CONNECTER / INSCRIPTION ******************/
+.bouttonsLogIns{
+	display: none;
+	outline: 1px solid purple;
+	width:10%;
+	vertical-align: top;
+	background: linear-gradient(rgba(52, 73, 94,1.0),rgba(44, 62, 80,1.0));
+	margin: 2%;
+}
+
+.bouttonsLogIns button{
+	width:50%;
+}
+
+.bouttonsLogIns button a{
+    color: black;
+}
+
+/*************** MENU QUI RESTE CONSTANT DANS TOUTES LES PAGES HTML *******************/
+.englobeMenu{
+	display: block;
+	height: 48px;
+	width: 100%;
+	background: linear-gradient(rgba(133, 205, 214, 1),rgba(171, 227, 215, 1));
+}
+.menuPrincipal{
+	/*outline: 3px solid rgba(241, 196, 15,1.0);*/
+	background:rgba(22, 31, 65, 1);
+	color:rgba(255, 255, 255,1.0);
+	position: fixed;
+	height: 7%;
+	left:10%;
+	z-index: 1; /* met une coche au-dessus */
+}
+
+.menuPrincipal ul {
+	/*outline: 5px solid yellow;*/
+	width:100%;
+	text-align: center;
+
+}
+
+.menuPrincipal ul li {
+	list-style-type: none;
+	/*outline: 1px solid red;*/
+}
+
+/* bordure pour le premier li du menu*/
+.menuPrincipal ul li:nth-of-type(1){
+	outline: 6px solid rgba(186, 232, 227, 1);
+	background:rgba(133, 205, 214, 0.7);
+}
+
+.menuPrincipal ul li:nth-of-type(1):hover{
+	outline: 6px solid rgba(157, 222, 156, 1);
+	background:rgba(186, 232, 227, 1);
+}
+
+.menuPrincipal ul li p{
+	display: inline-block;
+	width:40%;
+	vertical-align: top;
+	font-size:20px;
+	/*outline: 1px solid blue;**/
+	margin:3%;
+	padding:2%;
+
+}
+
+.menuPrincipal ul li img{
+	width:12%;
+	height:10%;
+	/*border:1px solid red;*/
+	border-radius: 25px;
+	padding:1%;
+	margin:3% 0%; 
+	background-color: rgba(236, 240, 241,1.0);
+}
+
+.menuPrincipal ul li a{
+	max-height: 0px;
+	/*max-width: 0px;*/
+	overflow: hidden;
+}
+
+.menuPrincipal ul:hover a{
+	transition: .6s all;
+	background-color: rgba(157, 222, 156, 1);
+	max-height: 100%;
+	overflow: visible;
+	outline: 1px solid rgba(255, 255, 255, 1);
+	width:100%;
+	color:white;
+	margin-top:8%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.menuPrincipal ul li a:hover{
+	animation:colorGradient 0.8s ease-out forwards;
+	transform:scale(1.2,1.2);
+	outline: 4px solid rgba(157, 222, 156,1);
+}
+
+/*** animation du déroulement des éléments du menu ***/
+/*** animation de couleur dégradée (colorie du haut en bas) ***/
+@keyframes colorGradient{
+	from{background:linear-gradient(rgba(52, 157, 92, 1)0%,rgba(226, 216, 167, 1));}
+	25%{background:linear-gradient(rgba(52, 157, 92, 1) 25%,rgba(226, 216, 167, 1));}
+	50%{background:linear-gradient(rgba(52, 157, 92, 1) 50%,rgba(226, 216, 167, 1));}
+	75%{background:linear-gradient(rgba(52, 157, 92, 1) 75%,rgba(226, 216, 167, 1));}
+	to{background:linear-gradient(rgba(52, 157, 92, 1) 100%,rgba(226, 216, 167, 1));}
+}
+/**************** BARRE DE RECHERCHE ******************/
+.barreRecherche{
+	/*outline: 1px solid gray;*/
+	width:80%;
+	margin: auto;
+	text-align: center;
+}
+
+.barreRecherche input{
+	display: inline-block;
+	width:50%;
+	font-size: 12px;
+
+}
+
+.barreRecherche button{
+	width:7%;	
+	/*outline: 2px solid yellow;*/
+	margin: 1em;
+}
+
+.barreRecherche button:hover{
+	box-shadow: 0px 0px 5px 0px rgba(236, 240, 241,1.0);
+}
+
+.barreRecherche button img{
+	width:100%;
+
+}
+
+/**********************************/
+.introAnnonce{
+	width: 80%;
+	outline: 3px solid rgba(0, 0, 255,.5);
+	background: rgba(0,255,180,0.5);
+	margin:2% auto;
+	font-size: 18px;
+}
+
+.introAnnonce h1{
+	text-align: center;
+}
+.annonce{
+	/*outline: 1px solid red;*/
+	width:80%;
+	padding: 1%;
+	margin:1% auto;
+	background: rgba(255,255,255,.5);
+	color:white;
+	height: 100%;
+}
+
+.sousAnnonce{
+	background:rgba(255,0,0, 0.6);
+	border: 3px solid rgba(255,255,0,.8);
+	border-radius: 10px;
+	width: 90%;
+	margin:1% auto;
+	padding:1%;
+
+}
+
+.sousAnnonce:hover{
+	background:linear-gradient(rgba(255,0,0,.6),rgba(255,0,0,.75));
+}
+
+/********* CADRE LOGIN ***********/
+.cadreLogin{
+	width: 70%;
+	height:10%;
+	background:rgba(255,0,0,.5);
+	outline:4px solid rgba(255, 255, 255, 0.4);
+	margin: 3% auto;
+	padding:1em;
+}
+
+.cadreLogin:hover,.cadreInscription:hover,.cadreDemande:hover{
+	box-shadow: 0px 0px 25px 5px rgba(255,255,255,0.4);
+}
+
+.cadreLogin h3{
+	color: rgba(236, 240, 241,1.0);
+	text-decoration: underline;
+	text-align: center;
+    font-size: 12px;
+}
+
+.cadreLogin p:nth-of-type(1) input, .cadreLogin p:nth-of-type(2) input,.cadreLogin p:nth-of-type(3) input{
+	font-size: 10px;
+	display: block;
+	margin:4% auto;
+	width:70%;
+}
+
+.cadreLogin a,.cadreInscription a{
+	margin: 3%;
+	width:70%;
+}
+
+.cadreLogin a:hover,.cadreInscription a:hover{
+	box-shadow: 0px 0px 25px 0px rgba(255,255,255,0.4); 
+	background:rgba(204, 110, 102, 1);
+}
+
+.cadreLogin input:focus, .cadreDemande input:focus, .barreRecherche input:focus{
+	outline: 4px solid rgba(182, 231, 223, 1);
+}
+
+
+/* CADRE INSCRIPTION ET CADRE DEMANDE */
+.cadreInscription,.cadreDemande{
+	width: 180px;
+	height: 100%;
+	margin:3%;
+	color:white;
+	/*background:linear-gradient(rgba(72,229,240,0.8) 70%,rgba(255,255,255,0.8));*/
+	background:rgba(0,0,0,0.3);
+	animation:transitionUL 1s ease-out forwards;
+}
+
+/* animation transition */
+@keyframes transitionUL{
+	from{transform:translateX(-100%);}
+	to{transform: translateX(20%);}
+}
+
+.cadreInscription h3,.cadreDemande h3{
+	text-decoration: underline;
+	text-align: center;
+	/*outline: rgba(236, 240, 241,1.0) 6px solid;*/
+	padding: 2%;
+}
+
+.cadreInscription input,.cadreInscription p{
+	font-size: 18px;
+	display: block;
+	margin:1em;
+}
+
+.cadreInscription .divInscriptionText,.cadreInscription .divInscriptionInput{
+	/*outline: 1px solid green;*/
+	width:41%;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+.cadreInscription .divInscriptionText:nth-of-type(1){
+	text-align: right;
+}
+
+.clearboth{
+	clear: both;
+}
+/* bouton submit */
+.cadreInscription form > input:nth-of-type(1){
+	width: 30%;
+	margin:3% auto;
+}
+
+/*** demande video ***/
+.cadreDemande{
+	width: 70%;
+}
+
+.cadreDemande input{
+	font-size: 18px;
+	display: block;
+	margin:1em auto;
+	width: 90%;
+}
+
+/* bouton submit */
+.cadreDemande form > input:nth-of-type(1){
+	width: 50%;
+	display: block;
+	margin:2% auto;
+}
+
+.cadreAfficherDemande{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	color:white;
+	background:rgba(0,0,0,.5);
+	text-align: center;
+	padding:1%;
+}
+
+.cadreAfficherDemande p{
+	text-align: center;
+	outline: 1px solid red;
+	background-color: rgba(0,0,0,0.5);
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+	padding:1% 0%;
+}
+.cadreAfficherDemande h3{
+	text-align: center;
+	text-decoration: underline;
+	margin:1%;
+}
+
+/***********CONTACT [CENTRE AIDE] *******/
+.info_aide{
+	background-color: rgba(255,255,255,0.9);
+	width:97%;
+	margin:auto;
+	height:100%;
+}
+
+.info_aide p:nth-of-type(1){
+	padding: 1em;
+}
+/* le bouton retour */
+.info_aide p:nth-of-type(2){
+	/*outline: 2px solid gray; */
+	width:50%;
+	margin:1em;
+}
+.info_aide p a{
+	color:black;
+	padding:0.5em 2em; 
+	text-align: center;
+	border-radius: 5px;
+	background:linear-gradient(rgba(230, 126, 34,1),rgba(241, 196, 15,1));
+	box-shadow: inset 0px 1px 0px #9e8d84, 0px 4px 0px 0px #322620, 0px 10px 5px #999;
+}
+
+.info_aide p a:active{
+	background:linear-gradient(rgba(241, 196, 15,1),rgba(241, 196, 15,1));
+}
+
+.info_aide nav ul li{
+	line-height: 20px;
+	height:40px;
+}
+
+/***********PLAN DU SITE *******/
+.info_aide nav {
+	background-image: url("../images/chibi_welcome.gif");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	opacity: 1;
+	width:90%;
+	background-size: 150px;
+	position: relative;
+	background-color: rgba(255,255,255,1);
+	margin: 1em auto;
+	height: 100%;
+}
+
+.info_aide nav ul li{
+	display:inline-block;
+	background:rgba(175,203,228, 1);
+	width:70%;
+	margin:2%;
+}
+
+.info_aide nav ul li:hover{
+	background:linear-gradient(rgba(175,203,228, 1),rgba(136, 152, 215, 1));
+	outline: 3px solid rgba(216,216, 216,1.0);
+}
+
+.info_aide nav ul li a{
+	color:black;
+	padding:0.5em;
+}
+
+#plan_du_site:target, #regles:target, #auteur:target, #but:target{
+	display: block;
+}
+#plan_du_site, #regles, #auteur, #but{
+	background-color:rgba(255,255,255,0.9);
+	text-align: center;
+	width:90%;
+	margin:1em auto;
+	display: none;
+	outline: 2px solid rgba(241, 196, 15,1.0);
+}
+
+#plan_du_site ul, #auteur ul{
+	list-style: none;
+}
+
+/* on remet la couleur noir sinon elle sera grisée */
+#plan_du_site ul li a{
+	color: black;
+}
+/* on met un effet visuel pour que l'usager sache que l'on peut cliquer sur ces liens*/
+#plan_du_site ul li a:hover{
+	background-color: rgba(102, 204, 138, 1);
+}
+
+footer{
+	color: rgba(255,255,255,1.0);
+	background: linear-gradient(rgba(133, 205, 214, 1),rgba(171, 227, 215, 1));
+	padding: 1%;
+	width: 100%;
+	margin-top: 1%;
+	text-align: center;
+}
+
+/* LES CADRES DU DOSSIER ACTION */
+.compteCree{
+	box-shadow: 0px 0px 25px 0px rgba(255,255,255,0.4); 
+	background:rgba(255,255,255,0.5); 
+	width:45%;
+	margin:auto;
+	height: 100%;
+	margin-top:10%;
+}
+
+.compteCree h2{
+	background:rgba(110, 207, 123, 1); /* vert */
+	color:rgba(255,255,255,1);
+	text-align: center;
+	outline: 3px solid rgba(194, 235, 231, 1);
+	padding:1%;
+}
+
+.compteCree a, .compteCree p{
+	font-size: 18px;
+	margin: 3%;
+	padding: 1%;
+	opacity: 1;
+}
+
+.compteCree p{
+	background-color: white;
+}
+
+.compteCree a:hover{
+	background:rgba(204, 110, 102, 1);
+	width:20%;
+}
+
+/* SESSION CLIENT */
+.logout{
+	background:white;
+	width: 30%;
+	display: inline-block;
+	margin: 3%;
+	vertical-align: middle;
+}
+
+.logout img{
+	width: 50%;
+}
+
+.logout a{
+	outline: 1px solid black;
+	width: 70%;
+	display: block;
+	margin:5% auto;
+	background:rgba(189, 195, 199,1.0);
+	word-wrap: break-word;
+}
+.logout a:nth-of-type(2)
+{
+	width: 60%;
+}
+
+.logout a:hover{
+	outline: 3px solid rgba(241, 196, 15,1.0);
+}
+/* image profil miniature*/
+.cadreLogge > a{
+	display: inline-block;
+	text-decoration: none;
+	width: 20%;
+	height: 50px;
+	margin:1%;
+	vertical-align: middle;
+	outline: 4px solid rgba(171, 211, 227,1);
+}
+.cadreLogge > a img{
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 90%;
+	margin:1em auto;
+	background: rgba(182, 231, 208, 0.7);
+
+}
+
+.editerProfil, .adminFonction{
+	width: 30%;
+	vertical-align: top;
+	margin:1%;
+	display: inline-block;
+	background:rgba(171, 211, 227,1);
+	outline: 4px solid rgba(247, 252, 251, 1);
+}
+
+.adminFonction h2{
+	text-align: center;
+	margin: 1%;
+}
+/* EDITOR */
+#monEditeur{
+	width: 94.5%;
+}
+
+.adminFonction form{
+	/*outline: 2px solid red;*/
+	display: block;
+	width: 60%;
+	margin:1% auto;
+	height: 100%;
+}
+
+.adminFonction form select{
+	width: 60%;
+	margin: 2%;
+}
+
+.adminFonction input{
+	font-size: 14px;
+	width:40%;
+	display: block;
+	margin:2% auto;
+	padding: 1%;
+}
+
+.divGauche{
+	width: 80%;
+	margin: auto;
+	padding:2%;
+}
+
+.divGaucheSous{
+	width: 90%;
+	margin:2% auto;
+
+}
+.divGaucheSous img{
+	outline: 2px solid white;
+	width: 100%;
+	height: 260px;
+}
+.divGaucheSous input{
+	width: 100%;
+	display: block;
+}
+
+.divDroite{
+	height: 100%;
+	padding:1%;
+}
+
+.divDroiteSous p, .divDroiteSous input, .divDroiteSous button{
+	width: 30%;
+	display: block;
+	margin:1% auto;
+	padding:1%;
+	text-align: center;
+}
+
+
+
+/** CADRE LOGGÉ POUR ADMIN ET CLIENT **/
+.cadreLogge{
+	outline: 1px solid purple;
+	background:white;
+	width:18%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.5%;
+}
+
+
+
+
+/** VERSION TABLETTE **/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+
+/** VERSION PORTABLE **/
+@media only screen and (min-width: 1025px){
+	a{
+		font-size: 18px;
+	}
+	header{
+		height:100px;
+	}
+	header h1{
+		width:60%;
+		display: inline-block;
+		margin:auto;
+		font-size: 24px;
+		padding:1%;
+		background-position:65%;
+	/*background: linear-gradient(rgba(52, 73, 94,0.8),rgba(44, 62, 80,1.0));*/
+	}
+	/**************** DIV CONNECTER / INSCRIPTION ******************/
+	.bouttonsLogIns{
+		outline: 1px solid purple;
+		width:20%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 2%;
+	}
+
+	.bouttonsLogIns button{
+		width:50%;
+		height: 24px;
+	}
+
+	.bouttonsLogIns button a{
+	    color: black;
+	}
+
+	/*************** MENU QUI RESTE CONSTANT DANS TOUTES LES PAGES HTML *******************/
+	.englobeMenu{
+		display: block;
+		height: 48px;
+		width: 100%;
+	}
+	.menuPrincipal{
+		/*outline: 3px solid rgba(241, 196, 15,1.0);*/
+		background:rgba(22, 31, 65, 1);
+		color:rgba(255, 255, 255,1.0);
+		height: 0px;
+		position: fixed;
+		left:10%;
+		z-index: 1; /* met une coche au-dessus */
+	}
+
+	.menuPrincipal ul {
+		/*outline: 5px solid yellow;*/
+		width:100%;
+		text-align: center;
+
+	}
+
+	.menuPrincipal ul li {
+		list-style-type: none;
+		/*outline: 1px solid red;*/
+	}
+
+	
+
+	.menuPrincipal ul li p{
+		display: inline-block;
+		width:40%;
+		vertical-align: top;
+		font-size:20px;
+		/*outline: 1px solid blue;*/
+		margin:3%;
+		padding:2%;
+
+	}
+
+	.menuPrincipal ul li img{
+		width:12%;
+		height:10%;
+		/*border:1px solid red;*/
+		border-radius: 25px;
+		padding:1%;
+		margin:3% 0%; 
+		background-color: rgba(236, 240, 241,1.0);
+	}
+
+	.menuPrincipal ul li a{
+		max-height: 0px;
+		/*max-width: 0px;*/
+		overflow: hidden;
+	}
+
+	.menuPrincipal ul:hover a{
+		transition: .6s all;
+		max-height: 100%;
+		overflow: visible;
+		width:100%;
+		color:white;
+		margin-top:8%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.menuPrincipal ul li a:hover{
+		animation:colorGradient 0.8s ease-out forwards;
+		transform:scale(1.2,1.2);
+	}
+
+	/**************** BARRE DE RECHERCHE ******************/
+	.barreRecherche{
+		/*outline: 1px solid gray;*/
+		width:80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.barreRecherche input{
+		display: inline-block;
+		width:40%;
+		font-size: 16px;
+
+	}
+
+	.barreRecherche button{
+		width:2.5%;	
+		/*outline: 2px solid yellow;*/
+		margin: 1em;
+	}
+
+	.barreRecherche button:hover{
+		box-shadow: 0px 0px 5px 0px rgba(236, 240, 241,1.0);
+	}
+
+	.barreRecherche button img{
+		width:100%;
+
+	}
+
+	/**********************************/
+	.annonce{
+		/*outline: 1px solid red;*/
+		width:80%;
+		margin:0.8% auto;
+	}
+
+	/********* CADRE LOGIN ***********/
+	.cadreLogin{
+		width: 40%;
+		background:rgba(200,0,0,.5);
+		outline:4px solid rgba(255, 255, 255, 0.4);
+		margin: 3% auto;
+		padding:1em;
+	}
+
+	.cadreLogin:hover,.cadreInscription:hover,.cadreDemande:hover{
+		box-shadow: 0px 0px 25px 5px rgba(255,255,255,0.4);
+	}
+
+	.cadreLogin h3{
+		color: rgba(236, 240, 241,1.0);
+		text-decoration: underline;
+		text-align: center;
+	    font-size: 20px;
+	}
+
+	.cadreLogin p:nth-of-type(1) input, .cadreLogin p:nth-of-type(2) input,.cadreLogin p:nth-of-type(3) input{
+		font-size: 18px;
+		display: block;
+		margin:4% auto;
+		width:40%;
+	}
+
+	.cadreLogin a,.cadreInscription a{
+		margin: 3%;
+		width:38%;
+	}
+
+	.cadreLogin a:hover,.cadreInscription a:hover{
+		box-shadow: 0px 0px 25px 0px rgba(255,255,255,0.4); 
+		background:rgba(204, 110, 102, 1);
+	}
+	
+
+	/* CADRE INSCRIPTION ET CADRE DEMANDE */
+	.cadreInscription,.cadreDemande{
+		width: 50%;
+		height: 100%;
+		margin:5%;
+		color:white;
+		/*background:linear-gradient(rgba(72,229,240,0.8) 70%,rgba(255,255,255,0.8));*/
+		background:rgba(0,255,255,.5);
+		animation:transitionUL 1s ease-out forwards;
+	}
+
+	/* animation transition */
+	@keyframes transitionUL{
+		from{transform:translateX(-100%);}
+		to{transform: translateX(40%);}
+	}
+	.cadreInscription h3,.cadreDemande h3{
+		text-decoration: underline;
+		text-align: center;
+		/*outline: rgba(236, 240, 241,1.0) 6px solid;*/
+		padding: 2%;
+	}
+
+	.cadreInscription input,.cadreInscription p{
+		font-size: 18px;
+		display: block;
+		margin:1em;
+	}
+
+	.cadreInscription .divInscriptionText,.cadreInscription .divInscriptionInput{
+		/*outline: 1px solid green;*/
+		width:41%;
+		display: inline-block;
+		vertical-align: middle;
+		
+	}
+
+	.cadreInscription .divInscriptionText:nth-of-type(1){
+		text-align: right;
+	}
+
+	.clearboth{
+		clear: both;
+	}
+	/* bouton submit */
+	.cadreInscription form > input:nth-of-type(1){
+		width: 30%;
+		margin:3% auto;
+	}
+
+	/*** demande video ***/
+	.cadreDemande{
+		width: 50%;
+	}
+
+	.cadreDemande input{
+		font-size: 20px;
+		display: block;
+		margin:1em auto;
+		width: 50%;
+	}
+
+	/* bouton submit */
+	.cadreDemande form > input:nth-of-type(1){
+		width: 50%;
+		display: block;
+		margin:2% auto;
+	}
+
+	.cadreAfficherDemande{
+		width: 70%;
+		height: 100%;
+		margin: auto;
+		color:white;
+		background:rgba(0,0,0,.5);
+		text-align: center;
+	}
+
+	.cadreAfficherDemande p{
+		text-align: center;
+		outline: 1px solid white;
+		background-color: rgba(255,0,0,0.5);
+		width: 32%;
+		display: inline-block;
+		vertical-align: top;
+		padding:1% 0%;
+		font-size: 18px;
+	}
+	.cadreAfficherDemande h3,.cadreDemande h3{
+		text-align: center;
+		text-decoration: underline;
+		margin:1%;
+		font-size: 22px;
+	}
+
+
+	/***********CONTACT [CENTRE AIDE] *******/
+	.info_aide{
+		background-color: rgba(255,255,255,0.9);
+		width:60%;
+		margin:1em auto;
+		height:100%;
+	}
+
+	.info_aide p:nth-of-type(1){
+		padding: 1em;
+	}
+	/* le bouton retour */
+	.info_aide p:nth-of-type(2){
+		/*outline: 2px solid gray; */
+		width:15%;
+		margin:1em;
+	}
+	.info_aide p a{
+		color:black;
+		padding:0.5em 2em; 
+		text-align: center;
+		border-radius: 5px;
+		background:linear-gradient(rgba(230, 126, 34,1),rgba(241, 196, 15,1));
+		box-shadow: inset 0px 1px 0px #9e8d84, 0px 4px 0px 0px #322620, 0px 10px 5px #999;
+	}
+
+	.info_aide p a:active{
+		background:linear-gradient(rgba(241, 196, 15,1),rgba(241, 196, 15,1));
+	}
+
+	.info_aide nav ul li{
+		line-height: 20px;
+		height:40px;
+	}
+
+	/***********PLAN DU SITE *******/
+	.info_aide nav {
+		background-image: url("../images/chibi_welcome.gif");
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		opacity: 1;
+		width:400px;
+		background-size: 150px;
+		position: relative;
+		background-color: rgba(255,255,255,1);
+		margin: 1em auto;
+		height: 100%;
+	}
+
+	.info_aide nav ul li{
+		display:inline-block;
+		background:rgba(175,203,228, 1);
+		width:50%;
+		margin:2%;
+	}
+
+	.info_aide nav ul li:hover{
+		background:linear-gradient(rgba(175,203,228, 1),rgba(136, 152, 215, 1));
+		outline: 3px solid rgba(216,216, 216,1.0);
+	}
+
+	.info_aide nav ul li a{
+		color:black;
+		padding:0.5em;
+	}
+
+	#plan_du_site:target, #regles:target, #auteur:target, #but:target{
+		display: block;
+	}
+	#plan_du_site, #regles, #auteur, #but{
+		background-color:rgba(255,255,255,0.9);
+		text-align: center;
+		width:50%;
+		margin:1em auto;
+		display: none;
+		outline: 2px solid rgba(241, 196, 15,1.0);
+	}
+
+	#plan_du_site ul, #auteur ul{
+		list-style: none;
+	}
+
+	/* on remet la couleur noir sinon elle sera grisée */
+	#plan_du_site ul li a{
+		color: black;
+	}
+	/* on met un effet visuel pour que l'usager sache que l'on peut cliquer sur ces liens*/
+	#plan_du_site ul li a:hover{
+		background-color: rgba(102, 204, 138, 1);
+	}
+
+	footer{
+		color: rgba(255,255,255,1.0);
+		padding: 1.5%;
+		width: 100%;
+		margin-top: 2%;
+		text-align: center;
+	}
+
+	/* LES CADRES DU DOSSIER ACTION */
+	.compteCree{
+		box-shadow: 0px 0px 25px 0px rgba(255,255,255,0.4); 
+		background:rgba(255,255,255,0.5); 
+		width:45%;
+		margin:auto;
+		height: 100%;
+		margin-top:10%;
+	}
+
+	.compteCree h2{
+		background:rgba(110, 207, 123, 1); /* vert */
+		color:rgba(255,255,255,1);
+		text-align: center;
+		outline: 3px solid rgba(194, 235, 231, 1);
+		padding:1%;
+	}
+
+	.compteCree a, .compteCree p{
+		font-size: 18px;
+		margin: 3%;
+		padding: 1%;
+		opacity: 1;
+	}
+
+	.compteCree p{
+		background-color: white;
+	}
+
+	.compteCree a:hover{
+		background:rgba(204, 110, 102, 1);
+		width:20%;
+	}
+}

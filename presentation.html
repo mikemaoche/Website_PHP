@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Présentation projet synthèse</title>
+	<style type="text/css">
+		html{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-image: url(images/bgBodyPresentation.jpg);
+			background-size: cover;
+		}
+
+		h1{
+			outline: 3px solid rgba(0,0,255,.8);
+			display: block;
+			margin: 3% auto;
+			width:60%;
+			padding:1%;
+			text-align: center;
+			background: rgba(255,255,255,.7);
+			animation : animColor 3s infinite;
+		}
+
+
+		@keyframes animColor{
+			0%{background: rgba(255,255,255,.7);}
+			50%{background: rgba(255,255,255,.95); }
+			to{background: rgba(255,255,255,.7);}
+		}
+
+		.accordions {
+			display: block;
+			width:60%;
+			margin: auto;
+		}
+
+		button.accordion {
+		    background-color: #DDF4EF;
+		    color: #444;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 100%;
+		    border: none;
+		    text-align: left;
+		    outline: none;
+		    font-size: 15px;
+		    transition: 0.4s;
+		}
+
+		button.accordion.active, button.accordion:hover {
+		    background-color: #66CCC2;
+		}
+
+		button.accordion:after {
+		    content: '\02795';
+		    font-size: 13px;
+		    color: #777;
+		    float: right;
+		    margin-left: 5px;
+		}
+
+		button.accordion.active:after {
+		    content: "\2796";
+		}
+
+		div.panel {
+		    padding: 0 18px;
+		    background-color: white;
+		    max-height: 0;
+		    overflow: hidden;
+		    transition: 0.6s ease-in-out;
+		    opacity: 0;
+		}
+
+		div.panel.show {
+		    opacity: 1;
+		    max-height: 3000px;  
+		}
+
+		img{
+			display: block;
+			margin:2% auto;
+			width:40%;
+			height:300px;
+			outline: 4px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Présentation projet synthèse B65</h1>
+	<div class="accordions">
+		<button class="accordion">Présentation sommaire du projet</button>
+		<div class="panel">
+			<h2>MyAnimTV</h2>
+			<p>Bonjour à tous, mon projet consiste à créer un site dans le but d'explorer toutes les facettes du web. Pour ce faire, je me suis inspiré des sites WEB qui diffusent des vidéos, car il y avait pleins d'intéractions entre l'interface et son utilisateur.</p>
+			<p>Voici ce que je trouve intéressant comme intéractions</p>
+			<ul>
+				<li>Le Remplissage des formulaires</li>
+				<li>La recherche d'une vidéo avec la base de données</li>
+				<li>La relation de la base données avec le serveur quand on se logge</li>
+				<li>La gestion des comptes usagers</li>
+				<li>Les fonctionnalités qu'un administrateur peut faire dans son interface</li>
+				<li>La rentrée de plusieurs types de données (images,sons,vidéos,texte,etc)</li>
+				<li>La dépendance des commentaires entre chaque vidéo lié par un usager</li>
+				<li>La sécurité des interfaces contre le hacking</li>
+				<li>Le design, l'ergonomie et les effets visuels que l'on peut créer</li>
+				<li>Et enfin, on veut qu'un site WEB offre la meilleure expérience à son utilisateur</li>
+			</ul>
+			<p>Pour aller dans les détails, voici quelques captures d'écrans. Vous pouvez cliquer sur l'image pour la voir en grand format</p>
+			<a href="http://127.0.0.1/sites/b65_projetsynthese/images/screen1.png">
+				<img src="images/screen1.png" alt="screen1" title="cliquez pour voir l'image en grand" /></a>
+			<p style="display:block; margin:1% auto; width:60%;">Sur cette image, on peut voir l'intéraction entre l'interface et l'utilisateur. Ici, j'ai employé une vérification des champs avec AJAX pour éviter à l'usager de rafraichir sa page lorsqu'il envoit le formulaire.</p>
+			<a href="http://127.0.0.1/sites/b65_projetsynthese/images/screen2.png">
+				<img src="images/screen2.png" alt="screen1" title="cliquez pour voir l'image en grand" /></a>
+			<p style="display:block; margin:1% auto; width:60%;">Dans la deuxième image, on voit que l'usager intéragit avec la vidéo lorsqu'il la joue. Mais surtout, il tisse un lien avec l'interface pour commenter. Il y a en arrière de lui une gestion des données entre le serveur et la base de données.</p>
+			<a href="http://127.0.0.1/sites/b65_projetsynthese/images/screen3.png">
+				<img src="images/screen3.png" alt="screen1" title="cliquez pour voir l'image en grand" /></a>
+			<p style="display:block; margin:1% auto; width:60%;">Enfin, la dernière image montre ce que l'administrateur du côté serveur puisse accomplir. On peut voir que l'admin intéragir aussi avec l'interface lorsqu'il ajoute du contenu dans la page accueil, supprime des usagers ou des vidéos, changer ses données, etc.</p>
+		</div>
+
+		<button class="accordion">Présentation de tous les outils technologiques utilisés pour le développement</button>
+		<div class="panel">
+			<p>Les technologies utilisées pour ce projet sont :</p>
+			<ul>
+				<li>Fureteur (Google chrome, FireFox, etc)</li>
+				<li>WAMP SERVEUR (Serveur sous Windows)</li>
+				<li>MYSQL (Database : base de données)</li>
+				<li>PHP (Langage côté serveur)</li>
+				<li>JAVASCRIPT (Langage côté client)</li>
+				<li>AJAX (Autre forme de javascript)</li>
+				<li>CKeditor (Librairie basée sur JQUERY)</li>
+			</ul>
+		</div>
+
+		<button class="accordion">Temps total investi</button>
+		<div class="panel">
+			<p>Le temps investi pour ce projet est estimé à plus que 36 heures.</p>
+		</div>
+
+		<button class="accordion">Les coordonnées de l’étudiant</button>
+		<div class="panel">
+			<p>Nom : Mao Che</p>
+			<p>Prénom : Mike</p>
+			<p>Adresse : 3475, rue Saint-Urbain</p>
+			<p>Appartement : 508</p>
+			<p>Code postal : H2X 2N4</p>
+		</div>
+
+		<button class="accordion">Pour plus de détails ... </button>
+		<div class="panel">
+		<p>Référez-vous aux liens ci-dessous :</p>
+		<p><a href="http://127.0.0.1/sites/b65_projetsynthese/B65_S3_Manuel_MikeMaoChe.docx">Au manuel de l'usager</a></p>
+		<p><a href="http://127.0.0.1/sites/b65_projetsynthese/B65_S3_LisezMoi_MikeMaoChe.txt">Au lisez-moi</a></p>
+		</div>
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		    acc[i].onclick = function(){
+		        this.classList.toggle("active");
+		        this.nextElementSibling.classList.toggle("show");
+		  }
+		}
+	</script>
+
+</body>
+</html>
